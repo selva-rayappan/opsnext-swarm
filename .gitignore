@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nestjs specific
 /dist
 /node_modules
@@ -22,3 +23,11 @@ lerna-debug.log*
 # temp directory
 .temp
 .tmp
+=======
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/
+>>>>>>> 1054075 (bd init: initialize beads issue tracking)
