@@ -1,5 +1,6 @@
 # Product Vision — OpsNext CRM
 
+<<<<<<< HEAD
 ---
 
 ## Vision Statement
@@ -21,11 +22,21 @@ Modern B2B sales teams are drowning in tool sprawl. Leads live in spreadsheets. 
 Legacy CRMs (Salesforce, Dynamics) are too expensive, too complex, and too slow to configure. SMB tools (Pipedrive, HubSpot free tier) lack the depth serious sales teams need. The middle market is underserved.
 
 **OpsNext CRM fills this gap**: enterprise-grade capability, modern-stack simplicity, SaaS economics.
+=======
+## Vision Statement
+
+OpsNext CRM empowers modern B2B sales teams to systematically acquire, grow, and retain customers through an intelligent, unified platform that turns every customer interaction into a competitive advantage.
+
+## Mission Statement
+
+To give growth-stage companies the sales infrastructure previously available only to enterprise players — purpose-built for speed, collaboration, and data-driven decision-making, with zero bloat and zero lock-in.
+>>>>>>> 3a28f4d (Initial Commit)
 
 ---
 
 ## Strategic Pillars
 
+<<<<<<< HEAD
 ### 1. Unified Customer Record
 Every contact, account, lead, opportunity, email, call, and note lives in one place. The customer record is the single source of truth — always complete, always current.
 
@@ -43,11 +54,22 @@ Multi-tenant from day one. Every tenant's data is architecturally isolated. RBAC
 
 ### 6. Speed to Value
 New teams are productive in hours, not weeks. Self-service onboarding, sensible defaults, and guided setup mean zero implementation cost.
+=======
+| # | Pillar | Description |
+|---|--------|-------------|
+| 1 | **Speed to Value** | Teams are productive on day one. No six-month implementations, no consultant armies. |
+| 2 | **Data Integrity** | Every action is recorded, every decision is traceable. The system of record is always trustworthy. |
+| 3 | **Workflow Automation** | Repetitive tasks are eliminated at the platform level, not delegated to spreadsheets. |
+| 4 | **Team Collaboration** | Selling is a team sport. The platform surfaces context across every touch point. |
+| 5 | **Actionable Intelligence** | Dashboards answer "what should I do next?" not just "what happened last quarter." |
+| 6 | **Security & Compliance** | Multi-tenant by design. Every tenant's data is isolated, encrypted, and auditable. |
+>>>>>>> 3a28f4d (Initial Commit)
 
 ---
 
 ## Value Proposition
 
+<<<<<<< HEAD
 | Persona | Core Value |
 |---------|-----------|
 | **Sales Rep** | Never lose context. Every customer touchpoint — logged, linked, searchable. |
@@ -55,12 +77,26 @@ New teams are productive in hours, not weeks. Self-service onboarding, sensible 
 | **CRM Admin** | Full configurability without code. Roles, pipelines, fields — all self-service. |
 | **VP Sales** | Accurate forecast, clean data, and board-ready reporting in one platform. |
 | **Developer / Ops** | API-first, Docker-native, extensible. Fits any tech stack. |
+=======
+### For Sales Representatives
+Stop context-switching between tools. OpsNext puts your leads, contacts, pipeline, emails, and tasks in one place — so you can focus on selling, not logging.
+
+### For Sales Managers
+Real-time visibility into every rep's pipeline, activity cadence, and forecast accuracy. Coach with facts, not gut feel.
+
+### For Operations & Admins
+A configurable, API-first platform that fits your process — not the other way around. RBAC, audit logs, and tenant isolation out of the box.
+
+### For Executives
+The data you need to make revenue decisions: pipeline health, win/loss trends, team productivity, and forecast accuracy — all in one executive dashboard.
+>>>>>>> 3a28f4d (Initial Commit)
 
 ---
 
 ## Target Market & Ideal Customer Profile (ICP)
 
 ### Primary ICP
+<<<<<<< HEAD
 | Dimension | Criteria |
 |-----------|---------|
 | Company size | 50 – 500 employees |
@@ -106,11 +142,46 @@ New teams are productive in hours, not weeks. Self-service onboarding, sensible 
 | Granular RBAC | Yes | Limited | Limited | **Yes** |
 | Immutable audit logs | Yes (extra cost) | No | No | **Yes (built-in)** |
 | White-label / OEM | No | No | No | **Roadmap** |
+=======
+- **Company size**: 50–500 employees
+- **Industry**: B2B SaaS, Professional Services, Technology, Financial Services
+- **Sales motion**: Inside sales, outbound-led, or PLG with sales overlay
+- **Team size**: 3–50 sales reps
+- **Revenue**: $2M–$50M ARR
+- **Pain state**: Outgrown spreadsheets or basic CRMs; frustrated with Salesforce complexity and cost
+
+### Secondary ICP
+- **Company size**: 500–2,000 employees (enterprise expansion path)
+- **Sales motion**: Field sales with complex multi-stakeholder deals
+- **Need**: Custom pipeline stages, advanced forecasting, territory management
+
+### Buyer Personas (decision-makers)
+- VP of Sales / CRO — owns the "revenue tooling" budget
+- Sales Operations Manager — owns the evaluation and admin
+- CTO / Head of Engineering — approves API/security/compliance requirements
+
+---
+
+## Competitive Positioning
+
+| Dimension | Salesforce | HubSpot | Pipedrive | **OpsNext CRM** |
+|-----------|-----------|---------|-----------|-----------------|
+| Setup complexity | High | Medium | Low | **Low** |
+| Cost at scale | Very High | High | Medium | **Competitive** |
+| Customization | Very High | Medium | Low | **High** |
+| API-first | Partial | Partial | Limited | **Yes** |
+| Multi-tenant SaaS | Yes (enterprise) | No | No | **Yes** |
+| Open source friendly | No | No | No | **Designed for self-host** |
+| Modern stack | Legacy | Modern | Modern | **Modern (NestJS/Next.js)** |
+
+**Differentiation**: OpsNext CRM is the only modern-stack, API-first CRM designed from day one for multi-tenant SaaS operators who want to run it themselves or offer it as a white-label product.
+>>>>>>> 3a28f4d (Initial Commit)
 
 ---
 
 ## Product Principles
 
+<<<<<<< HEAD
 1. **The customer record is sacred.** Nothing that touches a customer is ever permanently deleted without explicit admin action and a 30-day recovery window.
 
 2. **Convention over configuration — but configuration is always possible.** Sensible defaults ship out of the box. Everything is overridable by admins without code.
@@ -152,3 +223,37 @@ New teams are productive in hours, not weeks. Self-service onboarding, sensible 
 - Social media monitoring / integration
 - AI/ML features (v2.1+)
 - Calendar sync (Google/Outlook) — stub interface in v1, full sync in v2.0
+=======
+1. **Convention over configuration** — sensible defaults work for 80% of teams; full customization is available for the other 20%.
+2. **Every record is a timeline** — contacts, accounts, leads, and opportunities all have a full activity history. Nothing disappears.
+3. **Permissions are additive, not restrictive** — roles build up capabilities; the default is least-privilege.
+4. **API parity** — every UI action is backed by a public API. No GUI-only features.
+5. **Tenant isolation is not optional** — every query is scoped by tenant; cross-tenant data leakage is architecturally impossible.
+6. **Observability is built in** — audit logs, event streams, and metrics are first-class features, not afterthoughts.
+7. **No dark patterns** — data export is always available; no artificial lock-in.
+
+---
+
+## Product Phases
+
+| Phase | Name | Focus |
+|-------|------|-------|
+| 1 | Foundation | Auth, Tenancy, Contacts, Accounts, Leads |
+| 2 | Pipeline | Opportunities, Pipeline, Forecasting |
+| 3 | Activity | Tasks, Calls, Meetings, Reminders |
+| 4 | Communication | Email logging, Templates, History |
+| 5 | Intelligence | Reporting, Dashboards, Analytics |
+
+---
+
+## Out of Scope (v1)
+
+- Native mobile apps (responsive web only)
+- Built-in VoIP/dialing
+- Marketing automation / campaign management
+- CPQ (Configure, Price, Quote)
+- Contract management
+- Customer support ticketing
+- Social media integration
+- AI/ML-powered lead scoring (planned for v2)
+>>>>>>> 3a28f4d (Initial Commit)
